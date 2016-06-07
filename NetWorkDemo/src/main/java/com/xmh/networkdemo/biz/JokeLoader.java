@@ -14,7 +14,7 @@ import com.xmh.networkdemo.web.WebHelper;
  */
 public class JokeLoader {
 
-    /**调用自带的请求*/
+    /**调用原生请求*/
     public static void LoadJokeByWeb(final OnJokeLoadFinishListener listener){
         new Thread(new Runnable() {
             @Override
@@ -31,11 +31,13 @@ public class JokeLoader {
         VolleyHelper.request(context,AppConfig.httpUrl, AppConfig.httpArg,listener);
     }
 
+    /**调用okHttp请求*/
     public static void LoadJokeByOkHttp(OnJokeLoadFinishListener listener){
         OkHttpHelper.request(AppConfig.httpUrl,AppConfig.httpArg,listener);
 
     }
 
+    /**请求成功后的回调*/
     public interface OnJokeLoadFinishListener{
         void onFinish(JokeResult result);
     }

@@ -15,12 +15,12 @@
 1. 包ui.adapter
  -  `JokeListAdapter`用于控制RecyclerView显示
 1. 包web
- - `WebHelper`为HttpURLConnection请求方式
+ - `WebHelper`为使用原生HttpURLConnection请求方式
  - `VolleyHelper`为使用volley框架请求
  - `OkHttpHelper`为使用OkHttp框架请求
 
 #web包中为请求网络的类
-1. WebHelper为HttpURLConnection请求方式
+1. WebHelper为使用原生HttpURLConnection请求方式
 1. VolleyHelper为使用volley框架请求
 1. OkHttpHelper为使用OkHttp框架请求
 
