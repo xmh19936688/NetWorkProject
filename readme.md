@@ -18,11 +18,13 @@
  - `WebHelper`为使用原生HttpURLConnection请求方式
  - `VolleyHelper`为使用volley框架请求
  - `OkHttpHelper`为使用OkHttp框架请求
+ - 包`retrofit`为使用Retrofit框架请求
 
 #web包中为请求网络的类
-1. WebHelper为使用原生HttpURLConnection请求方式
-1. VolleyHelper为使用volley框架请求
-1. OkHttpHelper为使用OkHttp框架请求
+1. `WebHelper`为使用原生HttpURLConnection请求方式
+1. `VolleyHelper`为使用volley框架请求
+1. `OkHttpHelper`为使用OkHttp框架请求
+1. 包`retrofit`为使用Retrofit框架请求
 
 #其他
 1. ButterKnife框架

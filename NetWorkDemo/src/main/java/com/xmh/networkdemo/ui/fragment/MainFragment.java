@@ -42,7 +42,7 @@ public class MainFragment extends Fragment {
         rvList.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         //region 使用原生HttpURLConnection
-//        JokeLoader.LoadJokeByWeb(new JokeLoader.OnJokeLoadFinishListener() {
+//        JokeLoader.loadJokeByWeb(new JokeLoader.OnJokeLoadFinishListener() {
 //            @Override
 //            public void onFinish(final JokeResult result) {
 //                getActivity().runOnUiThread(new Runnable() {
@@ -56,7 +56,7 @@ public class MainFragment extends Fragment {
         //endregion
 
         //region 使用volley
-//        JokeLoader.LoadJokeByVolley(getActivity(),new JokeLoader.OnJokeLoadFinishListener() {
+//        JokeLoader.loadJokeByVolley(getActivity(),new JokeLoader.OnJokeLoadFinishListener() {
 //            @Override
 //            public void onFinish(JokeResult result) {
 //                mJokeListAdapter.setJokeList(result.getShowapi_res_body().getContentlist());
@@ -65,7 +65,21 @@ public class MainFragment extends Fragment {
         //endregion
 
         //region 使用okHttp
-        JokeLoader.LoadJokeByOkHttp(new JokeLoader.OnJokeLoadFinishListener() {
+//        JokeLoader.loadJokeByOkHttp(new JokeLoader.OnJokeLoadFinishListener() {
+//            @Override
+//            public void onFinish(final JokeResult result) {
+//                getActivity().runOnUiThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        mJokeListAdapter.setJokeList(result.getShowapi_res_body().getContentlist());
+//                    }
+//                });
+//            }
+//        });
+        //endregion
+
+        //region 使用Retrofit
+        JokeLoader.loadJokeByRetrofit(new JokeLoader.OnJokeLoadFinishListener() {
             @Override
             public void onFinish(final JokeResult result) {
                 getActivity().runOnUiThread(new Runnable() {
