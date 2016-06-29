@@ -41,6 +41,8 @@ public class MainFragment extends Fragment {
         rvList.setAdapter(mJokeListAdapter);
         rvList.setLayoutManager(new LinearLayoutManager(getActivity()));
 
+        JokeLoader.loadPostRetrofit();
+
         //region 使用原生HttpURLConnection
 //        JokeLoader.loadJokeByWeb(new JokeLoader.OnJokeLoadFinishListener() {
 //            @Override

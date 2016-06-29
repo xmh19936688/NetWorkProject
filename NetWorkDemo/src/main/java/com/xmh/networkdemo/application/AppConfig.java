@@ -11,4 +11,7 @@ public class AppConfig {
 
     public static final String BASE_URL="http://apis.baidu.com/";
     public static final String JOKE_URL="showapi_open_bus/showapi_joke/joke_text";
+
+    public static final String POST_BASE_URL="http://uu.newerest.com/";
+    public static final String POST_LIST_URL="index.php/Scenic/getList";
 }
